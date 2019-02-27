@@ -1,0 +1,20 @@
+{
+  "name": "repro7933",
+  "version": "0.1.0",
+  "description": "Repro case for mantis issue 7933",
+  "esy": {
+    "build": "dune build -p #{self.name}"
+  },
+  "scripts": {
+    "link": "esy dune build bin/app.exe.o"
+  },
+  "dependencies": {
+    "@opam/dune": "*",
+    "@opam/lambda-term": "*",
+    "@opam/lwt": "^4.0.0",
+    "ocaml": "~4.7.0"
+  },
+  "devDependencies": {
+    "@opam/merlin": "*"
+  }
+}

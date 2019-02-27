@@ -1,0 +1,5 @@
+(executables
+ (names app)
+ (libraries repro7933.lib)
+ (flags (:standard -verbose))
+ (modes object))
