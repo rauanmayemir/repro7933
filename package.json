@@ -6,7 +6,7 @@
     "build": "dune build -p #{self.name}"
   },
   "scripts": {
-    "link": "esy dune build bin/app.exe.o"
+    "link": "sh -c \"dune clean && dune build bin/app.exe.o\""
   },
   "dependencies": {
     "@opam/dune": "*",
